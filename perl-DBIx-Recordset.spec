@@ -8,8 +8,8 @@
 Summary:	DBIx::Recordset - abstraction and simplification of database access
 Summary(pl):	DBIx::Recordset - abstrakcja i uproszczenie dostêpu do bazy danych
 Name:		perl-DBIx-Recordset
-Version:	0.24
-Release:	3
+Version:	0.26
+Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -45,13 +45,9 @@ DBIx::Recordset nie jest ograniczony do WWW.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-# Strip out broken-by-design test preparation code; tests requires
-# configured RDBMS anyway.  I have tested it locally, it works; it's
-# noarch, so tests are needless.
-/usr/bin/perl -ni -e 'print unless 11...197' Makefile.PL
 
 %build
-%{__perl} Makefile.PL < /dev/null \
+%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"%{pdir}::%{pnam}")' \
 	INSTALLDIRS=vendor
 %{__make}
 
