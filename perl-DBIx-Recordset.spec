@@ -5,7 +5,7 @@ Summary:	DBIx-Recordset perl module
 Summary(pl):	Modu³ perla DBIx-Recordset
 Name:		perl-DBIx-Recordset
 Version:	0.24
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
