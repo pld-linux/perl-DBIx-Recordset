@@ -45,7 +45,7 @@ DBIx::Recordset nie jest ograniczony do WWW.
 
 %build
 %{__perl} Makefile.PL < /dev/null \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 #%%{__make} test
 
