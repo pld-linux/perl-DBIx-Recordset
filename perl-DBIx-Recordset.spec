@@ -1,12 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	DBIx
 %define	pnam	Recordset
-Summary:	DBIx-Recordset perl module
-Summary(pl):	Modu³ perla DBIx-Recordset
+Summary:	DBIx::Recordset - abstraction and simplification of database access
+Summary(pl):	DBIx::Recordset - abstrakcja i uproszczenie dostêpu do bazy danych
 Name:		perl-DBIx-Recordset
 Version:	0.24
 Release:	2
-License:	GPL/Artistic
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	76835b342ac63d731a4eb9529613ee99
@@ -20,19 +20,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 DBIx::Recordset is a perl module for abstraction and simplification of
 database access.
 
-The goal is to make standard database access (select/insert/update/delete)
-easier to handle and independend of the underlying DBMS. Special attention
-is made on web applications to make it possible to handle the state-less
-access and to process the posted data of formfields, but DBIx::Recordset
-is not limited to web applications.
+The goal is to make standard database access
+(select/insert/update/delete) easier to handle and independend of the
+underlying DBMS.  Special attention is made on web applications to
+make it possible to handle the state-less access and to process the
+posted data of formfields, but DBIx::Recordset is not limited to web
+applications.
 
 %description -l pl
 DBIx::Recordset jest modu³em perla, umo¿liwiaj±cym ³atwy dostêp do baz
 danych na wy¿szym, ni¿ oferowany przez modu³ DBI poziomie abstrakcji.
 
 Celem jest uproszczenie typowych (odczyt/zapis/nadpisanie/usuniêcie)
-operacji na bazie danych, oraz uniezale¿nienie ich od stosowanego DBMS.
-Szczególn± uwagê po¶wiêcono umo¿liwieniu aplikacjom internetowym
+operacji na bazie danych, oraz uniezale¿nienie ich od stosowanego
+DBMS. Szczególn± uwagê po¶wiêcono umo¿liwieniu aplikacjom internetowym
 obs³ugi bezstanowego dostêpu i przetwarzania danych z formularzy, ale
 DBIx::Recordset nie jest ograniczony do WWW.
 
