@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	DBIx
-%define	pnam	Recordset
+%define		pdir	DBIx
+%define		pnam	Recordset
 Summary:	DBIx::Recordset - abstraction and simplification of database access
 Summary(pl):	DBIx::Recordset - abstrakcja i uproszczenie dostêpu do bazy danych
 Name:		perl-DBIx-Recordset
