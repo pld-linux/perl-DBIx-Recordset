@@ -43,7 +43,7 @@ DBIx::Recordset nie jest ograniczony do WWW.
 /usr/bin/perl -ni -e 'print unless 11...197' Makefile.PL
 
 %build
-perl Makefile.PL < /dev/null
+%{__perl} Makefile.PL < /dev/null
 %{__make}
 #%{__make} test
 
