@@ -34,7 +34,7 @@ posted data of formfields, but DBIx::Recordset is not limited to web
 applications.
 
 %description -l pl
-DBIx::Recordset jest modu³em perla, umo¿liwiaj±cym ³atwy dostêp do baz
+DBIx::Recordset jest modu³em Perla, umo¿liwiaj±cym ³atwy dostêp do baz
 danych na wy¿szym, ni¿ oferowany przez modu³ DBI poziomie abstrakcji.
 
 Celem jest uproszczenie typowych (odczyt/zapis/nadpisanie/usuniêcie)
