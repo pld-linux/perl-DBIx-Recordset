@@ -65,6 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %{perl_sitelib}/DBIx/*.pm
+%{perl_sitelib}/DBIx/Intrors.pod
 %dir %{perl_sitelib}/DBIx/Recordset/
 %{perl_sitelib}/DBIx/Recordset/*.pm
 %{_mandir}/man3/*
