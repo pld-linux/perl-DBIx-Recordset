@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	DBIx
 %define	pnam	Recordset
@@ -12,9 +16,11 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	76835b342ac63d731a4eb9529613ee99
 BuildRequires:	perl-devel >= 5
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:  perl-DBI
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 DBIx::Recordset is a perl module for abstraction and simplification of
@@ -48,7 +54,8 @@ DBIx::Recordset nie jest ograniczony do WWW.
 %{__perl} Makefile.PL < /dev/null \
 	INSTALLDIRS=vendor
 %{__make}
-#%%{__make} test
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
