@@ -9,8 +9,8 @@ Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -35,7 +35,6 @@ Szczególn± uwagê po¶wiêcono umo¿liwieniu aplikacjom internetowym
 obs³ugi bezstanowego dostêpu i przetwarzania danych z formularzy, ale
 DBIx::Recordset nie jest ograniczony do WWW.
 
-
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 # Strip out broken-by-design test preparation code; tests requires
@@ -53,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README TODO eg/README
+mv -f eg/README README.eg
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install eg/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
@@ -63,11 +62,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes README TODO README.eg
 %{perl_sitelib}/DBIx/*.pm
 %{perl_sitelib}/DBIx/Intrors.pod
-%dir %{perl_sitelib}/DBIx/Recordset/
+%dir %{perl_sitelib}/DBIx/Recordset
 %{perl_sitelib}/DBIx/Recordset/*.pm
 %{_mandir}/man3/*
-%dir %{_examplesdir}/%{name}-%{version}/
-%{_examplesdir}/%{name}-%{version}/*
+%{_examplesdir}/%{name}-%{version}
