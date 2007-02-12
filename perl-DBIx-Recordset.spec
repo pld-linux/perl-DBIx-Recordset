@@ -6,7 +6,7 @@
 %define		pdir	DBIx
 %define		pnam	Recordset
 Summary:	DBIx::Recordset - abstraction and simplification of database access
-Summary(pl):	DBIx::Recordset - abstrakcja i uproszczenie dostêpu do bazy danych
+Summary(pl.UTF-8):   DBIx::Recordset - abstrakcja i uproszczenie dostÄ™pu do bazy danych
 Name:		perl-DBIx-Recordset
 Version:	0.26
 Release:	1
@@ -33,14 +33,14 @@ make it possible to handle the state-less access and to process the
 posted data of formfields, but DBIx::Recordset is not limited to web
 applications.
 
-%description -l pl
-DBIx::Recordset jest modu³em Perla, umo¿liwiaj±cym ³atwy dostêp do baz
-danych na wy¿szym, ni¿ oferowany przez modu³ DBI poziomie abstrakcji.
+%description -l pl.UTF-8
+DBIx::Recordset jest moduÅ‚em Perla, umoÅ¼liwiajÄ…cym Å‚atwy dostÄ™p do baz
+danych na wyÅ¼szym, niÅ¼ oferowany przez moduÅ‚ DBI poziomie abstrakcji.
 
-Celem jest uproszczenie typowych (odczyt/zapis/nadpisanie/usuniêcie)
-operacji na bazie danych, oraz uniezale¿nienie ich od stosowanego
-DBMS. Szczególn± uwagê po¶wiêcono umo¿liwieniu aplikacjom internetowym
-obs³ugi bezstanowego dostêpu i przetwarzania danych z formularzy, ale
+Celem jest uproszczenie typowych (odczyt/zapis/nadpisanie/usuniÄ™cie)
+operacji na bazie danych, oraz uniezaleÅ¼nienie ich od stosowanego
+DBMS. SzczegÃ³lnÄ… uwagÄ™ poÅ›wiÄ™cono umoÅ¼liwieniu aplikacjom internetowym
+obsÅ‚ugi bezstanowego dostÄ™pu i przetwarzania danych z formularzy, ale
 DBIx::Recordset nie jest ograniczony do WWW.
 
 %prep
