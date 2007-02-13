@@ -6,7 +6,7 @@
 %define		pdir	DBIx
 %define		pnam	Recordset
 Summary:	DBIx::Recordset - abstraction and simplification of database access
-Summary(pl.UTF-8):   DBIx::Recordset - abstrakcja i uproszczenie dostępu do bazy danych
+Summary(pl.UTF-8):	DBIx::Recordset - abstrakcja i uproszczenie dostępu do bazy danych
 Name:		perl-DBIx-Recordset
 Version:	0.26
 Release:	1
