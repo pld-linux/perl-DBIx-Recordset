@@ -9,7 +9,7 @@ Summary:	DBIx::Recordset - abstraction and simplification of database access
 Summary(pl.UTF-8):	DBIx::Recordset - abstrakcja i uproszczenie dostępu do bazy danych
 Name:		perl-DBIx-Recordset
 Version:	0.26
-Release:	1
+Release:	2
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
