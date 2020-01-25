@@ -4,7 +4,6 @@
 
 %define		pdir	DBIx
 %define		pnam	Recordset
-%include	/usr/lib/rpm/macros.perl
 Summary:	DBIx::Recordset - abstraction and simplification of database access
 Summary(pl.UTF-8):	DBIx::Recordset - abstrakcja i uproszczenie dostępu do bazy danych
 Name:		perl-DBIx-Recordset
